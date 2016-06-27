@@ -1,1 +1,3 @@
 # simulate-dice-probablity
+it will simulate the odds of getting a number from the two or more dices...
+//program done just for the sake of practice to know the c language
