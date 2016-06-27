@@ -1,0 +1,24 @@
+// c program
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define SIDES 6
+#define R_SIDE (rand() % SIDES+1)
+void main()
+{
+ int trials,j,d1,d2,n_dice,outcomes;
+clrscr();
+srand(clock());
+printf("\n enter the number of trials");
+scanf("%d",&trials);
+printf("\n enter the number of dices");
+scanf("%d",&n_dice);
+d1=R_SIDE;
+d2=R_SIDE;
+for(j=0;j<trials;++j)
+    outcomes[d1+d2]++;
+printf("probablity \n");
+for(j=2;j<n_dice*SIDES;++j)
+    printf("j=%d p=%lf \n",j,(double)(outcomes[j])/trials);
+getch();
+}
